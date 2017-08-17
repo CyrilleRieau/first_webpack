@@ -1,29 +1,32 @@
 {
-  "name": "first_webpack",
-  "version": "0.0.1",
-  "description": "First work on webpack$",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CyrilleRieau/first_webpack.git"
-  },
-  "keywords": [
-    "Webpack",
-    "JS"
-  ],
-  "author": "Cyrille Rieau <crieau@simplon.co>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/CyrilleRieau/first_webpack/issues"
-  },
-  "homepage": "https://github.com/CyrilleRieau/first_webpack#readme",
-  "dependencies": {
-    "jquery": "^3.2.1"
-  },
-  "devDependencies": {
-    "webpack": "^3.5.5"
-  }
+    "name": "first_webpack",
+    "version": "0.0.1",
+    "description": "First work on webpack$",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack --watch",
+        "serve": "webpack-dev-server --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CyrilleRieau/first_webpack.git"
+    },
+    "keywords": [
+        "Webpack",
+        "JS"
+    ],
+    "author": "Cyrille Rieau <crieau@simplon.co>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/CyrilleRieau/first_webpack/issues"
+    },
+    "homepage": "https://github.com/CyrilleRieau/first_webpack#readme",
+    "dependencies": {
+        "jquery": "^3.2.1"
+    },
+    "devDependencies": {
+        "webpack": "^3.5.5",
+        "webpack-dev-server": "^2.7.1"
+    }
 }
