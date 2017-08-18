@@ -1,10 +1,21 @@
+const webpack = require('webpack');
+
 module.exports = {
     entry: {
-        index: './index.js'
+        "exemple-ajax": './scripts/exemple_ajax.js',
+        index: './index.js',
+        vendor: [
+            'jquery'
+        ]
     },
     output: {
         path: __dirname + '/dist',
-        filename: 'bundle.js'
+        filename: '[name].bundle.js'
     },
+    plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'vendor'
+        })
+    ],
     devtool: 'inline-source-map'
 };
